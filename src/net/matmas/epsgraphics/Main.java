@@ -26,8 +26,8 @@ import java.io.FileNotFoundException;
 public class Main {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		EPSGraphics2D graphics = new EPSGraphics2D();
-		graphics.drawString("Hello World!", 0, 0);
-		graphics.writeToFile(new File("helloworld.eps"));
+		EPSGraphics2D g = new EPSGraphics2D();
+		g.drawString("Hello World!", 0, 0);
+		g.writeToFile(new File("helloworld.eps"));
 	}
 }
