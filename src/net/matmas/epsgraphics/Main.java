@@ -16,6 +16,7 @@
  */
 package net.matmas.epsgraphics;
 
+import java.awt.Graphics2D;
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -24,10 +25,10 @@ import java.io.FileNotFoundException;
  * @author Martin Riesz <riesz.martin at gmail.com>
  */
 public class Main {
-
-	public static void main(String[] args) throws FileNotFoundException {
-		EPSGraphics2D g = new EPSGraphics2D();
-		g.drawString("Hello World!", 0, 0);
-		g.writeToFile(new File("helloworld.eps"));
-	}
+    public static void main(String[] args) throws FileNotFoundException {
+        Graphics2D g = new EPSGraphics2D();
+        g.drawString("Hello World!", 0, 0);
+        
+        ((EPSGraphics2D)g).writeToFile(new File("helloworld.eps"));
+    }
 }

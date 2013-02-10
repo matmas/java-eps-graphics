@@ -10,9 +10,9 @@ Features:
 
 Example usage:
 
-    EPSGraphics2D g = new EPSGraphics2D();
+    Graphics2D g = new EPSGraphics2D();
     g.drawString("Hello World!", 0, 0);
-    g.writeToFile(new File("helloworld.eps"));
+    ((EPSGraphics2D) g).writeToFile(new File("helloworld.eps"));
 
 
 Code license: [LGPLv3](http://www.gnu.org/copyleft/lesser.html)
