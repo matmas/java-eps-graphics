@@ -15,4 +15,4 @@ Example usage:
     ((EPSGraphics2D) g).writeToFile(new File("helloworld.eps"));
 
 
-Code license: [LGPLv3](http://www.gnu.org/copyleft/lesser.html)
+Code license: BSD
